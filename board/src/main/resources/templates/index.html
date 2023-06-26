@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+<button onclick="saveReq()">글작성</button>
+<button onclick="pagingReq()">페이징목록</button>
+</body>
+<script>
+
+    const saveReq = () => {
+        location.href = "/board/save";
+    }
+    const listReq = () => {
+        location.href = "/board/";
+    }
+    const pagingReq = () => {
+        location.href = "/board/paging";
+    }
+
+
+</script>
+</html>

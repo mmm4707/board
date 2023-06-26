@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>save</title>
+    <link rel="stylesheet" href="/style.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f5f5f5;
+    }
+
+    form {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+        width: 60%;
+    }
+
+    form input[type="text"], form textarea {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        font-size: 18px;
+    }
+
+    form textarea {
+        height: 200px;
+    }
+
+    form input[type="submit"] {
+        background-color: #007BFF;
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    form input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+</style>
+</head>
+<body>
+<form action="/board/save" method="post" enctype="multipart/form-data">
+    작성자: <input type="text" name="boardWriter"> <br>
+    비밀번호: <input type="text" name="boardPass"> <br>
+    제목: <input type="text" name="boardTitle"> <br>
+    내용: <textarea name="boardContents" cols="30" rows="10"></textarea> <br>
+    첨부파일: <input type="file" name="boardFile"> <br>
+    <input type="submit" value="글작성">
+</form>
+</body>
+</html>
