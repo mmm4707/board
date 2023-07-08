@@ -12,7 +12,7 @@
 
 # 설명
     
-spring boot, jpa를 미니 게시판 프로젝트<br>
+spring boot, jpa를 사용한 미니 게시판 프로젝트<br>
     
     create board
 ![1](https://github.com/mmm4707/board/assets/39482751/66509299-2f6d-4ca5-90c9-bb176ecffc86)<br>
